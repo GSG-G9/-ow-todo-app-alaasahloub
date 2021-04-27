@@ -13,6 +13,7 @@ const AddTodo = () => {
         { id: statelength + 1, todoName: e.target.value, compleated: false },
       ]);
     }
+    e.target.value = ""
   };
 
   return (

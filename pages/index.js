@@ -2,7 +2,10 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import ContextProvider from '../comps/ContextProvider'
 import AddTodo from '../comps/AddTodo'
-import AllTodos from '../comps/AllTodos'
+// import AllTodos from '../comps/AllTodos'
+// import ActiveTodos from '../comps/ActiveTodos'
+// import CompleatedTodos from '../comps/CompleatedTodos'
+import ListWithFilters from '../comps/ListWithFilters'
 
 export default function Home() {
   return (
@@ -13,7 +16,10 @@ export default function Home() {
       </Head>
       <ContextProvider>
         <AddTodo />
-        <AllTodos />
+        {/* <AllTodos />
+        <ActiveTodos />
+        <CompleatedTodos /> */}
+        <ListWithFilters />
       </ContextProvider>
     </div>
   )
