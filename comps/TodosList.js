@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import { TodoContext } from "./ContextProvider";
 import DeleteTodo from "./DeleteTodo";
+import Checkbox from "./Checkbox";
 
 const TodosList = (props) => {
   const { filterType } = props;
@@ -17,14 +18,15 @@ const TodosList = (props) => {
     case "Completed":
       result = todosState.filter((todo) => todo.compleated === true);
       break;
-      default:
-        return todosState;
+    default:
+      return todosState;
   }
 
   return (
     <div>
       {result.map((todo) => (
         <div key={todo.id}>
+          <Checkbox isChecked={todo.compleated} todoId={todo.id} />
           {todo.todoName}
           <DeleteTodo todoId={todo.id} />
         </div>
