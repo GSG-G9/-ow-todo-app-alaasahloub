@@ -1,0 +1,33 @@
+.container{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #E4E5F1;
+}
+.checkInput{
+    opacity: 0;
+    width: 100%;
+    background-image:  linear-gradient(to right, #57ddff, #c058f3);
+    height: 12px;
+    border-radius: 50% !important;
+    margin: 0px;
+}
+.checkLabel{
+    width: 29px;
+    height: 29px;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 50%;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkLabel:focus{
+    opacity: 20;
+    outline: none;
+    border: none;
+    background-image:  linear-gradient(to right, #57ddff, #c058f3);
+}

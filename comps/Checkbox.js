@@ -1,5 +1,7 @@
 import { useContext } from "react";
 import { TodoContext } from "./ContextProvider";
+import Image from "next/image";
+import styles from "../styles/CheckAll.module.css";
 
 const Checkbox = (props) => {
   const { todosState, setTodosState } = useContext(TodoContext);
@@ -16,11 +18,49 @@ const Checkbox = (props) => {
       })
     );
   };
+  // return {
+  //   ...(isChecked === true ? (
+  //     <input type="checkbox" checked onChange={() => handleChange(todoId)} />
+  //   ) : (
+  //     <input type="checkbox" onChange={() => handleChange(todoId)} />
+  //   )),
+  // };
   return {
     ...(isChecked === true ? (
-      <input type="checkbox" checked onChange={() => handleChange(todoId)} />
+  <div className={styles.container}>
+    <button className={styles.checkLabel}>
+      <input
+        type="checkbox"
+        checked
+        onChange={() => handleChange(todoId)}
+        id="checkAll"
+        className={styles.checkInput}
+      />
+      <Image
+        src="/check.svg"
+        width={13}
+        height={13}
+        className={styles.checkImage}
+      />
+    </button>
+  </div>
     ) : (
-      <input type="checkbox" onChange={() => handleChange(todoId)} />
+    <div className={styles.container}>
+    <button className={styles.checkLabel}>
+      <input
+        type="checkbox"
+        onChange={() => handleChange(todoId)}
+        id="checkAll"
+        className={styles.checkInput}
+      />
+      <Image
+        src="/check.svg"
+        width={13}
+        height={13}
+        className={styles.checkImage}
+      />
+    </button>
+  </div>
     )),
   };
 };
