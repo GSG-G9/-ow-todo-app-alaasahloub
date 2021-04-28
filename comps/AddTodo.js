@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { TodoContext } from "./ContextProvider";
+import CheckAll from './CheckAll'
 
 const AddTodo = () => {
   const { todosState, setTodosState } = useContext(TodoContext);
@@ -18,6 +19,7 @@ const AddTodo = () => {
 
   return (
     <div>
+      <CheckAll />
       <input type="text" onBlur={handleAdd} />
     </div>
   );
