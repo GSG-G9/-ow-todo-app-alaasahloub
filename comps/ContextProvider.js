@@ -9,12 +9,19 @@ const todoS = [
   { id: 5, todoName: "Pick up groceries", compleated: true },
   { id: 6, todoName: "Complete Todo App on Frontend Mentor", compleated: true },
 ];
-
+const theme = true;
 export const TodoContext = createContext();
+export const ThemeContext = createContext();
 
 const ContextProvider = ({ children }) => {
   const [todosState, setTodosState] = useState(todoS)
-  return <TodoContext.Provider value={{todosState, setTodosState}}>{children}</TodoContext.Provider>;
+  const [themeMode, setThemeMode] = useState(theme)
+
+  return <TodoContext.Provider value={{todosState, setTodosState}}>
+    <ThemeContext.Provider value={{themeMode, setThemeMode}}>
+    {children}
+    </ThemeContext.Provider>
+    </TodoContext.Provider>;
 };
 
 ContextProvider.propTypes = {

@@ -1,0 +1,40 @@
+.todosWithFilterContainer{
+    width: 100%;
+}
+.lightFilterContainer{
+    padding: 7px 15px;
+    margin-bottom:  60px;
+    border-radius:0px 0px 4px 4px; 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    color: #D2D3DB;
+    box-shadow: 0px 4px 19px 1px #E4E5F1;
+}
+.darkFilterContainer{
+    padding: 12px 15px;
+    margin-bottom:  60px;
+    border-radius:0px 0px 4px 4px; 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #25273C;
+    color: #D2D3DB;
+    box-shadow: 1px 4px 16px -1px #393A4C;
+}
+.filters{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.filterBtn{
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #9394A5;
+    padding: 0px 3px;
+}

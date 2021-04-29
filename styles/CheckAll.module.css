@@ -3,6 +3,8 @@
     height: 30px;
     border-radius: 50%;
     border: 1px solid #E4E5F1;
+    display: inline-block;
+    margin-right: 30px;
 }
 .checkInput{
     opacity: 0;

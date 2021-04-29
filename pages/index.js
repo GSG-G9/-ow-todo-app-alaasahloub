@@ -1,13 +1,11 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-import ContextProvider from '../comps/ContextProvider'
-import AddTodo from '../comps/AddTodo'
-// import AllTodos from '../comps/AllTodos'
-// import ActiveTodos from '../comps/ActiveTodos'
-// import CompleatedTodos from '../comps/CompleatedTodos'
-import ListWithFilters from '../comps/ListWithFilters'
+import React, { useContext } from "react";
+import ContextProvider from "../comps/ContextProvider";
+import Head from "next/head";
+import Image from "next/image";
+import TodoCard from "../comps/TodoCard";
+import styles from "../styles/Home.module.css";
 
-export default function Home() {
+const Home = () => {
   return (
     <div className={styles.container}>
       <Head>
@@ -15,12 +13,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <ContextProvider>
-        <AddTodo />
-        {/* <AllTodos />
-        <ActiveTodos />
-        <CompleatedTodos /> */}
-        <ListWithFilters />
+        <TodoCard />
       </ContextProvider>
     </div>
-  )
-}
+  );
+};
+export default Home;
