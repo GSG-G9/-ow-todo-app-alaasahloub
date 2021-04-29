@@ -14,11 +14,22 @@
   .backgroundSection{
     width:100%;
     box-sizing: border-box;
+    height: 175px;
   }
   .backgroundSection img{
     width: 100%;
     height: 100%;
 
+  }
+  .imageLigth{
+    background-image: url('/bg-light.jpg');
+    width: 100%;
+    height: 400px;  
+  }
+  .imageDark{
+    background-image: url('/bg-light.jpg');
+    width: 100%;
+    height: 400px;  
   }
   .lightFooterSection{
     background-color: #fafafa;
@@ -45,4 +56,26 @@
   .footerSection p{
     padding-bottom: 15px;
     align-self: flex-end;
+  }
+  .backgrounImage{
+    height: 100% !important;
+  }
+  @media only screen and (max-width: 375px) {
+    .cardContainer{
+      width: 90%;
+    } 
+    .backgrounImage{
+    height: 266px;  
+   }
+   .backgroundSection, .backgrounImage{
+    height: 300px !important;
+   }
+   .imageLigth{
+    background-image: url('/bg-mobile-light.jpg');
+    height: 300;
+  }
+  .imageDark{
+    background-image: url('/bg-mobile-dark.jpg');
+    height: 260;
+  }
   }

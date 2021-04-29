@@ -8,16 +8,11 @@ import { ThemeContext } from "./ContextProvider";
 
 const TodoCard = () => {
   const { themeMode } = useContext(ThemeContext);
-
   return (
     <>
       <div className={styles.back}>
         <div className={styles.backgroundSection}>
-          <Image
-            src={themeMode === true ? "/bg-light.jpg" : "/bg-dark.jpg"}
-            width={1440}
-            height={300}
-          />
+          <div className={themeMode === true ? styles.imageLigth : styles.imageDark}></div>
         </div>
         <div
           className={
