@@ -1,0 +1,47 @@
+.lightAddTodoContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0px 20px;
+    background-color: #fff;
+    color:#9394A5;
+    border-radius: 4px; 
+    border:none;
+    margin-bottom: 30px;
+}
+.DarkAddTodoContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0px 20px;
+    background-color: #25273C;
+    color: #FAFAFA;
+    border-radius: 4px; 
+    border:none;
+    margin-bottom: 30px;
+}
+.lightAddTodoContainer .addInput{
+    width: 90%;
+    height: 100%;
+    color:#9394A5;
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 20px 0px;
+    font-size: 18px;
+}
+.lightAddTodoContainer .addInput::placeholder{
+    color:#9394A5;
+}
+.DarkAddTodoContainer .addInput{
+    width: 90%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 20px 0px;
+    font-size: 18px;
+    color: #FAFAFA;
+}

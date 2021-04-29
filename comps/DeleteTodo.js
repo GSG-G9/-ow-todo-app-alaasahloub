@@ -12,9 +12,7 @@ const DeleteTodo = (props) => {
   };
 
   return (
-    <button onClick = {()=> handleDelete(todoId)}>
-      <Image src="/cross.svg" width={20} height={20} />
-    </button>
+      <Image src="/cross.svg" width={20} height={20} onClick = {()=> handleDelete(todoId)} />
   );
 };
 
