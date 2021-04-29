@@ -9,7 +9,6 @@ const AddTodo = () => {
   const { todosState, setTodosState } = useContext(TodoContext);
   const { themeMode } = useContext(ThemeContext);
 
-  // const statelength = todosState.length;
 
   const handleAdd = (e) => {
     e.preventDefault();

@@ -26,7 +26,6 @@ const TodosList = (props) => {
   }
 
   return (
-    // <div className={styles.todosList}>
     <div
       className={
         themeMode === true ? styles.lightTodosList : styles.darkTodosList

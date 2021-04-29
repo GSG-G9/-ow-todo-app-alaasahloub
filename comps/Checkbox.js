@@ -20,13 +20,6 @@ const Checkbox = (props) => {
       })
     );
   };
-  // return {
-  //   ...(isChecked === true ? (
-  //     <input type="checkbox" checked onChange={() => handleChange(todoId)} />
-  //   ) : (
-  //     <input type="checkbox" onChange={() => handleChange(todoId)} />
-  //   )),
-  // };
   return {
     ...(isChecked === true ? (
       <div

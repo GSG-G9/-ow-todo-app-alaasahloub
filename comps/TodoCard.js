@@ -8,7 +8,6 @@ import { ThemeContext } from "./ContextProvider";
 
 const TodoCard = () => {
   const { themeMode } = useContext(ThemeContext);
-  console.log("mode: ", themeMode);
 
   return (
     <>
