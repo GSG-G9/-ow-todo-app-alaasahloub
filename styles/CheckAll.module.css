@@ -1,35 +1,90 @@
-.container{
+.lightWrapper{
+    margin-right: 15px;
+}
+.lightWrapper .checkmark{
+    display: block;
     width: 30px;
     height: 30px;
+    border: 50%;
     border-radius: 50%;
-    border: 1px solid #E4E5F1;
-    display: inline-block;
-    margin-right: 30px;
-}
-.checkInput{
-    opacity: 0;
-    width: 100%;
-    background-image:  linear-gradient(to right, #57ddff, #c058f3);
-    height: 12px;
-    border-radius: 50% !important;
-    margin: 0px;
-}
-.checkLabel{
-    width: 29px;
-    height: 29px;
-    margin: 0px;
-    padding: 0px;
-    border-radius: 50%;
-    opacity: 0;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(to right, #57ddff, #c058f3);
 }
+.lightWrapper .checkmark span{
+    background-color: #fff;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    display: block;
+}
+.lightWrapper .checkmark::after{
+    content: "";
+    width: 6px;
+    height: 16px;
+    border-right: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+    display: none;
+    -webkit-transform: rotateZ(40deg);
+    transform: rotateZ(40deg);
 
-.checkLabel:focus{
-    opacity: 20;
-    outline: none;
-    border: none;
-    background-image:  linear-gradient(to right, #57ddff, #c058f3);
+}
+.lightWrapper .checkInput{
+    opacity: 0;
+}
+.lightWrapper .checkInput:checked  ~ .checkmark span{
+    display: none;
+}
+.lightWrapper .checkInput:checked  ~ .checkmark::after{
+    display: block;
+}
+.DarkWraper{
+    margin-right: 15px;
+}
+.DarkWraper .checkmark{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 50%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #57ddff, #c058f3);
+}
+.DarkWraper .checkmark span{
+    background-color: #25273C;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    display: block;
+}
+.DarkWraper .checkmark::after{
+    content: "";
+    width: 6px;
+    height: 16px;
+    border-right: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+    display: none;
+    -webkit-transform: rotateZ(40deg);
+    transform: rotateZ(40deg);
+
+}
+.DarkWraper .checkInput{
+    opacity: 0;
+}
+.DarkWraper .checkInput:checked  ~ .checkmark span{
+    display: none;
+}
+.DarkWraper .checkInput:checked  ~ .checkmark::after{
+    display: block;
 }

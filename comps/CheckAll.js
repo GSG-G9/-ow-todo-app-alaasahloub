@@ -2,9 +2,11 @@ import { useContext } from "react";
 import { TodoContext } from "./ContextProvider";
 import Image from "next/image";
 import styles from "../styles/CheckAll.module.css";
+import { ThemeContext } from "./ContextProvider";
 
 const CheckAll = () => {
   const { todosState, setTodosState } = useContext(TodoContext);
+  const { themeMode } = useContext(ThemeContext);
 
   const handleCheck = () => {
     setTodosState(
@@ -15,19 +17,16 @@ const CheckAll = () => {
   };
 
   return (
-    <div>
-      <div className={styles.container}>
-        <button  className={styles.checkLabel}>
-          <input
-            type="checkbox"
-            id="checkAll"
-            className={styles.checkInput}
-            onChange={handleCheck}
-            /> 
-            <Image src="/check.svg" width={13} height={13} className={styles.checkImage} />
-          {/* </input> */}
-        </button>
-      </div>
+    <div className={themeMode === true ?styles.lightWrapper : styles.DarkWraper}>
+      <input
+        type="checkbox"
+        id="checkAll"
+        className={styles.checkInput}
+        onChange={handleCheck}
+      />
+      <label for="checkAll" className={styles.checkmark}>
+        <span></span>
+      </label>
     </div>
   );
 };

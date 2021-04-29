@@ -1,34 +1,45 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# To-Do App
+Here you will find the requirements and fetures for this project[here](https://hackmd.io/_JuugnFPTa-ofxV2-jtkxQ)
 
-First, run the development server:
+## Live demo 📺
+[Demo Link](https://affectionate-mcnulty-8e3028.netlify.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
+![active-states-dark](https://user-images.githubusercontent.com/44459251/116512897-6c16d900-a8d1-11eb-8c4d-33ff76ffbf44.jpg)
+
+
+
+
+## Technologies 💻
+- NextJS.
+- ReactJS (Hooks).
+
+
+## Getting Started 📣
+**1. Clone this repo using the command:**
+
+```
+git clone https://github.com/GSG-G9/ow-todo-app-alaasahloub.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**2. Install all of the dependencies:**
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```
+npm install
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+**3. run the app locally:**
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```
+npm run dev
+```
 
-## Learn More
+Now the app should run here -> [http://localhost:3000](http://localhost:3000)
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Resources 🌐
+* [NextJS Youtube playlist](https://www.youtube.com/playlist?list=PL4cUxeGkcC9g9gP2onazU5-2M-AzA8eBw)
+* [NextJS Doc](https://nextjs.org/docs/getting-started)
+* [NextJS learn how to create app](https://nextjs.org/learn/basics/create-nextjs-app)
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

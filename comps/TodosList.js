@@ -27,12 +27,22 @@ const TodosList = (props) => {
 
   return (
     // <div className={styles.todosList}>
-    <div className={themeMode===true? styles.lightTodosList : styles.darkTodosList }>
+    <div
+      className={
+        themeMode === true ? styles.lightTodosList : styles.darkTodosList
+      }
+    >
       {result.map((todo) => (
         <div key={todo.id} className={styles.todo}>
           <Checkbox isChecked={todo.compleated} todoId={todo.id} />
-          <p className={styles.todoName}>{todo.todoName}</p>
-          <DeleteTodo todoId={todo.id}  />
+          <p className={styles.todoName}>
+            {todo.compleated === true ? (
+              <del>todo.todoName</del>
+            ) : (
+              todo.todoName
+            )}
+          </p>
+          <DeleteTodo todoId={todo.id} />
         </div>
       ))}
     </div>
